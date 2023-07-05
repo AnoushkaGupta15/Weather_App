@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1505533542167-8c89838bb19e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)
+    );
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(18, 18, 18, 0.4);
+    border-radius: 16px;
+    border-bottom: 3px solid #800080;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    color: #eeeeee;
+}
+
+header input:focus {
+    background-color: #191970;
+}
+
+input::placeholder {
+    color: #c090a3;
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #702963;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: #702963;
+    font-size: 16px;
+}
+
+.current .temp {
+    color: #673147;
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .temp span {
+    font-weight: 200;
+}
+
+.current .weather {
+    color: #702963;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 3px rgba(196, 100, 196, 0.4);
+}
+
+.current .high-low {
+    color: #702963;
+    font-size: 24px;
+    font-weight: 500;
+}
